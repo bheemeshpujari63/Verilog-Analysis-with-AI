@@ -1,5 +1,4 @@
 # Verilog-Analysis-with-AI
-# Verilog Analysis with AI
 
 Welcome to the **Verilog Analysis with AI** project! This repository contains a Python script that analyzes Verilog hardware description language (HDL) files using a small language model (TinyLlama-1.1B) and tools like Verilator and Icarus Verilog. The goal is to automate the review and improvement of Verilog code, making it useful for students, researchers, and engineers new to HDL design.
 
@@ -43,3 +42,16 @@ To run this project, you need Python, Google Colab, and some dependencies. Follo
    ```bash
    git clone https://github.com/yourusername/Verilog-Analysis-with-AI.git
    cd Verilog-Analysis-with-AI
+## 
+## Installing Required Software
+```bash
+!pip install transformers pandas openpyxl numpy bitsandbytes accelerate
+!apt-get update
+!apt-get install -y verilator iverilog
+```
+1. **Transformers** :: For loading the Phi-3.5-mini-instruct model (AI analysis).  
+2.**pandas**: For creating and saving the Excel output.  
+3.**openpyxl**: For writing to Excel files. 
+4.**numpy**: For numerical operations (e.g., token handling). 
+5.**bitsandbytes**: For 4-bit quantization to manage memory.  
+6.**accelerate**: Optimizes model loading (though not fully utilized here).  
